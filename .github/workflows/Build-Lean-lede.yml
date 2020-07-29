@@ -16,7 +16,7 @@ jobs:
       env:
           DEBIAN_FRONTEND: noninteractive
       run: |
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/prenv.sh)
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/prenv.sh)
         
     - name: Clone source and install
       run: |
@@ -28,8 +28,8 @@ jobs:
     - name: Download and Load custom configuration
       run: |
         cd lede
-        curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/x86_64/.config >.config
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/diy.sh)
+        curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/x86_64/.config >.config
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/diy.sh)
         ./scripts/feeds install -a
         make defconfig
         
@@ -101,7 +101,7 @@ jobs:
       env:
           DEBIAN_FRONTEND: noninteractive
       run: |
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/prenv.sh)
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/prenv.sh)
         
     - name: Clone source and install
       run: |
@@ -113,8 +113,8 @@ jobs:
     - name: Download and Load custom configuration
       run: |
         cd lede
-        curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/rpi/.config >.config
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/diy.sh)
+        curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/rpi/.config >.config
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/diy.sh)
         ./scripts/feeds install -a
         make defconfig
         
@@ -185,7 +185,7 @@ jobs:
       env:
           DEBIAN_FRONTEND: noninteractive
       run: |
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/prenv.sh)
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/prenv.sh)
         
     - name: Clone source and install
       run: |
@@ -197,8 +197,8 @@ jobs:
     - name: Download and Load custom configuration
       run: |
         cd lede
-        curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/rpi32/.config >.config
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/diy.sh)
+        curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/rpi32/.config >.config
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/diy.sh)
         ./scripts/feeds install -a
         make defconfig
         
@@ -269,7 +269,7 @@ jobs:
       env:
           DEBIAN_FRONTEND: noninteractive
       run: |
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/prenv.sh)
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/prenv.sh)
         
     - name: Clone source and install
       run: |
@@ -281,8 +281,8 @@ jobs:
     - name: Download and Load custom configuration
       run: |
         cd lede
-        curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/rpi4/.config >.config
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/diy.sh)
+        curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/rpi4/.config >.config
+        bash <(curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/diy.sh)
         ./scripts/feeds install -a
         make defconfig
         
