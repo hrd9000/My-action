@@ -26,4 +26,4 @@ sed -i 's/192.168/10.0/g' package/base-files/files/bin/config_generate
 # sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
 
 # Add some default settings
-curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/x86_64/zzz-default-settings > package/lean/default-settings/files/zzz-default-settings
+curl -fsSL https://raw.githubusercontent.com/hrd9000/My-action/master/lean-lede/x86_64/zzz-default-settings > package/lean/default-settings/files/zzz-default-settings
